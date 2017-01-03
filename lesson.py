@@ -5,9 +5,10 @@ passtext = ""
 
 while exit_phrase != "exit":
     passtext = input("Please login:")
-if passtext == "pauelstv":
-    print("hello pauelstv")
+    print("а нихуя!")
+if passtext == "huy":
+    print("hello HUY")
 elif passtext == "kek":
     print("Hello KEK")
 else:
-        print("user not found. exit")
+    print("user not found. exit")
