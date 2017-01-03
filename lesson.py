@@ -3,12 +3,11 @@ __author__ = 'pauelstv'
 exit_phrase = ""
 passtext = ""
 
-while exit_phrase != "exit":
+while passtext != "exit":
     passtext = input("Please login:")
-    print("nope")
-if passtext == "huy":
-    print("hello HUY")
-elif passtext == "kek":
-    print("Hello KEK")
-else:
-    print("user not found. exit")
+    if passtext == "huy":
+        print("hello HUY")
+    elif passtext == "kek":
+        print("Hello KEK")
+    else:
+        print("User not found. Type exit")
