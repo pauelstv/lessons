@@ -1,6 +1,7 @@
 import os
 import platform
 import sys
+
 def getsysteminfo():
     print(os.getcwd())
     print(platform.processor())
@@ -11,6 +12,10 @@ def getsysteminfo():
 
 getsysteminfo()
 
+
+callback = "azaza"
+answ = "kekeke"
+print (('%s huypesda %s') % (callback, answ) )
 print("Press any key to exit...")
 kek=input()
 
