@@ -26,3 +26,7 @@ color = input("What is your favorite color?")
 
 print ("Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color))
+
+###################### Date and time library
+from datetime import datetime
+
