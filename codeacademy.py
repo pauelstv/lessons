@@ -27,9 +27,12 @@ print("Ah, so your name is %s, your quest is %s, " \
 "and your favorite color is %s." % (name, quest, color))"""
 
 ###################### Date and time library
+import datetime
 from datetime import datetime
 now = datetime.now()
 print(now)
 print(now.year)
 print(now.month)
 print(now.day)
+
+
