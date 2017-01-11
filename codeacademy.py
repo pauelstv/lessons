@@ -40,7 +40,7 @@ print("Formatted time:", "%s:%s:%s" % (now.hour, now.minute, now.second))
 print("Formatted datetime string:", "%s/%s/%s %s:%s:%s" % (now.month, now.day, now.year, now.hour, now.minute, now.second))
 
 #### User inpit IF ELIF ELSE lesson
-def clinic():
+"""def clinic():
     print("You've just entered the clinic!")
     print("Do you take the door on the left or the right?")
     answer = input("Type left or right and hit 'Enter'.").lower()
@@ -51,6 +51,30 @@ def clinic():
     else:
         print("You didn't pick left or right! Try again.")
         clinic()
+clinic()"""
+# Assign True or False as appropriate on the lines below!
+# Set this to True if 17 < 328 or to False if it is not.
+bool_one = True   # We did this one for you!
+# Set this to True if 100 == (2 * 50) or to False otherwise.
+bool_two = True
+# Set this to True if 19 <= 19 or to False if it is not.
+bool_three = True
+# Set this to True if -22 >= -18 or to False if it is not.
+bool_four = False
+# Set this to True if 99 != (98 + 1) or to False otherwise.
+bool_five = False
+"""
+    Boolean Operators
+------------------------      True and True is True
+True and False is False
+False and True is False
+False and False is False
 
-clinic()
+True or True is True
+True or False is True
+False or True is True
+False or False is False
 
+Not True is False
+Not False is True
+"""
