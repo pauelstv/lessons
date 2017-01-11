@@ -37,4 +37,20 @@ print(now.day)
 
 print("Formatted date:", "%s-%s-%s" % (now.year, now.month, now.day))
 print("Formatted time:", "%s:%s:%s" % (now.hour, now.minute, now.second))
+print("Formatted datetime string:", "%s/%s/%s %s:%s:%s" % (now.month, now.day, now.year, now.hour, now.minute, now.second))
+
+#### User inpit IF ELIF ELSE lesson
+def clinic():
+    print("You've just entered the clinic!")
+    print("Do you take the door on the left or the right?")
+    answer = input("Type left or right and hit 'Enter'.").lower()
+    if answer == "left" or answer == "l":
+        print("This is the Verbal Abuse Room, you heap of parrot droppings!")
+    elif answer == "right" or answer == "r":
+        print("Of course this is the Argument Room, I've told you that already!")
+    else:
+        print("You didn't pick left or right! Try again.")
+        clinic()
+
+clinic()
 
