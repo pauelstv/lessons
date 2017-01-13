@@ -78,3 +78,27 @@ False or False is False
 Not True is False
 Not False is True
 """
+def using_control_once():
+    if True:
+        return "Success #1"
+
+def using_control_again():
+    if True:
+        return "Success #2"
+
+print(using_control_once())
+print(using_control_again())
+# Else problems
+answer = "'Tis but a scratch!"
+
+def black_knight():
+    if answer == "'Tis but a scratch!":
+        return True
+    else:
+        return False        # Make sure this returns False
+
+def french_soldier():
+    if answer == "Go away, or I shall taunt you a second time!":
+        return True
+    else:
+        return False        # Make sure this returns False

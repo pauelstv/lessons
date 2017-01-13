@@ -18,7 +18,7 @@ organiz = ["Folder_01",
 # по умолчанию должен быть создан каталог e:/_backups/
 dt = datetime.datetime.now()
 currentdate = dt.strftime('%Y_%m_%d-%H%M')
-os.mkdir('e:/_backups/'+currentdate)
+os.mkdir('c:/_backups/'+currentdate)
 
 for org in organiz:
     print(org+" копирование...")
