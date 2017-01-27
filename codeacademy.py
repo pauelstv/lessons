@@ -102,3 +102,5 @@ def french_soldier():
         return True
     else:
         return False        # Make sure this returns False
+
+Functions
