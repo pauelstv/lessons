@@ -12,6 +12,16 @@ def getsysteminfo():
 
 getsysteminfo()
 
+#вывод числа с плавающей точкой, 2 знака, float
+total = 2.288
+print("FLOAT VALUE PRINT:", "%.2f" % total)
+#строковые методы
+parrot = "KeekKeeeKEEKEe AAZAZAZAa"
+print("Lower:", parrot.lower())
+print("Upper:", parrot.upper())
+print("Lower:", str.lower(parrot))
+print("Upper:", str.upper(parrot))
+print("Count length:", len(parrot))
 
 callback = "azaza"
 answ = "kekeke"
