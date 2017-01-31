@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget
-
+import PyQt5.
 
 if __name__ == '__main__':
 
