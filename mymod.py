@@ -18,3 +18,4 @@ for num in a:
     print(a[num])
 for num in a:
     print(a[num], end=" ")
+
