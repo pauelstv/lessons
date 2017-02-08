@@ -103,4 +103,26 @@ def french_soldier():
     else:
         return False        # Make sure this returns False
 
-Functions
+# immutable типы bytearray, tuple (кортеж)
+# создать пустой корреж(tuple)
+mytuple = tuple()
+#mutable - list
+immutable_1 = (1,2,3,4)
+mutable_1 = [1,1,3,4]
+mutable_1[0] = False
+print(mutable_1)
+# положить внутрь списка еще один список
+mutable_1[0] = [True, True, True]
+print(mutable_1)
+# доступ к элементам вложенного списка
+mutable_1[0][1] = False
+print(mutable_1)
+#операции над списками: append[добавить в конец] clear copy count extend index insert[вставка по индексу] pop[удаление из конца] remove reverse sort
+mutable_1.append(1111)
+print(mutable_1)
+# добавление в произвольное место списка
+mutable_1.insert(4, 2222)
+print(mutable_1)
+# bytearray - изменяемая последовательность байтов
+b = bytearray(b'abc')
+
