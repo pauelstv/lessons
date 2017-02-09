@@ -44,5 +44,12 @@ res = (errorIndication, errorStatus, errorIndex, varBinds)\
 if not errorIndication is None  or errorStatus is True:
        print("Error: %s %s %s %s" % res)
 else:
-       print("%s" % varBinds)
-       print("%s " % varBinds)
+       print("%s" % varBinds[0])
+myvar = str(varBinds)
+print("MyVAR collections:", int(myvar[79:-3]))
+
+
+
+
+
+
