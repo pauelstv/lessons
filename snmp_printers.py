@@ -12,18 +12,16 @@ def getOID(targetIPaddr,value):
     res = (errorIndication, errorStatus, errorIndex, varBinds)\
         = real_fun(comm_data, transport, value)
 
-    try:
-        #if not errorIndication is None  or errorStatus is True:
-        #    print("Error: %s %s %s %s" % res)
-            myvarlist = ['Host not respond...']
-    except:
-        #else:
+    if not errorIndication is None  or errorStatus is True:
+        #print("Error: %s %s %s %s" % res)
+        print("Host ", targetIPaddr, ' not responded...')
+        return 1
+    else:
             # print("%s" % varBinds[0])
             # print("Not parsed string", varBinds[0])
             myvar = str(varBinds[0])
             myvarlist = myvar.split('= ')
             # print("Eeeeerrroookkkk value -> ", myvarlist[1])
-    print("indexes in list ->", myvarlist[0])
     oidValue = int(myvarlist[1])
     return oidValue
 
@@ -40,7 +38,7 @@ targetGroup = ['172.16.0.225', '172.16.0.226', '172.16.0.227', '172.16.0.228',
                '172.16.0.233', '172.16.0.234', '172.16.0.235', '172.16.0.236',
                '172.16.0.237', '172.16.0.238', '172.16.0.239']
 for indexValue, valueFrormList in enumerate(targetGroup):
-    print("Current toner Level is:", getLevels(targetGroup[indexValue]))
+    print("Current toner Level on IP:", targetGroup[indexValue], getLevels(targetGroup[indexValue]))
 
 
 
