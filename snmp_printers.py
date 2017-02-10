@@ -1,6 +1,6 @@
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 
-def getOID(targetIPaddr,value):
+def getOID(targetIPaddr, value):
     """ имаем ip, oid: возвращается значение oid"""
     community='public'
 
@@ -13,8 +13,7 @@ def getOID(targetIPaddr,value):
         = real_fun(comm_data, transport, value)
 
     if not errorIndication is None  or errorStatus is True:
-        #print("Error: %s %s %s %s" % res)
-        print("Host ", targetIPaddr, ' not responded...')
+        print("IP:", targetIPaddr, "->", "Error: %s %s %s %s" % res)
         return 1
     else:
             # print("%s" % varBinds[0])
@@ -22,6 +21,7 @@ def getOID(targetIPaddr,value):
             myvar = str(varBinds[0])
             myvarlist = myvar.split('= ')
             # print("Eeeeerrroookkkk value -> ", myvarlist[1])
+    print(oidValue)
     oidValue = int(myvarlist[1])
     return oidValue
 
