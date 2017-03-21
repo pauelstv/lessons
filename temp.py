@@ -25,6 +25,24 @@ for name in girls:
 for i in range(1, 6):
     print(i)
 
+from pycbrf.toolbox import ExchangeRates
+
+# Запрашиваем данные на 26-е июня.
+rates = ExchangeRates('2016-06-26')
+
+rates.date_requested  # 2016-06-26 00:00:00
+rates.date_received  # 2016-06-25 00:00:00
+# 26-е был выходной, а курс на выходные установлен 25-го
+rates.dates_match  # False
+
+# Список всех курсов валют на день доступ в rates.rates.
+
+# Поддерживаются разные идентификаторы валют:
+rates['USD'].name  # Доллар США
+rates['R01235'].name  # Доллар США
+rates['840'].name  # Доллар США
+print(rates['USD'].value)
+
 
 
 
